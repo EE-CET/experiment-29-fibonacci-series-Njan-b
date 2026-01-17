@@ -5,11 +5,11 @@ public class Fibonacci {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
 
-        if (N == 0) {
+        if (N == 1) {
             System.out.println(0);
             return;
         }
-        if (N == 1) {
+        if (N == 2) {
             System.out.println(1);
             return;
         }
@@ -17,7 +17,7 @@ public class Fibonacci {
         int a = 0, b = 1;
         int fib = 0;
 
-        for (int i = 2; i <= N; i++) {
+        for (int i = 3; i <= N; i++) {
             fib = a + b;
             a = b;
             b = fib;
